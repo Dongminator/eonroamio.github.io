@@ -1,0 +1,12 @@
+{
+    "applinks": {
+        "details": [
+            {
+                "appIDs": ["85N86WNGB2.io.eonroam.app"],
+                "components": [
+                    { "/": "/s/*", "comment": "a shared route" }
+                ]
+            }
+        ]
+    }
+}

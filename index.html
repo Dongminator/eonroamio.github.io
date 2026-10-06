@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Eonroamio · Map Your Memories</title>
+  <meta name="description" content="Upload your travel photos and Eonroamio automatically draws the route.">
+  <meta name="theme-color" content="#00252E">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="canonical" href="https://eonroam.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://eonroam.io/">
+  <meta property="og:title" content="Eonroamio · Map Your Memories">
+  <meta property="og:description" content="Upload your travel photos and Eonroamio automatically draws the route.">
+  <meta property="og:image" content="https://eonroam.io/images/logo512.png">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" href="/favicon.ico" sizes="48x48 32x32 16x16">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/site.js" defer></script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <mask id="eon-gap" maskUnits="userSpaceOnUse" x="-60" y="-60" width="320" height="320">
+      <rect x="-60" y="-60" width="320" height="320" fill="#fff"></rect>
+      <g transform="translate(57.5 75) rotate(35)"><rect x="-18.86" y="-130" width="37.72" height="260" fill="#000"></rect></g>
+    </mask>
+    <symbol id="logo" viewBox="0 0 136 136">
+      <rect width="136" height="136" rx="30" fill="#ED5A3B"></rect>
+      <g transform="translate(9.38 -8.89) scale(1.0222)">
+        <g mask="url(#eon-gap)"><g transform="translate(57.5 75) scale(1.29) rotate(90) scale(0.9 1.2) translate(-50 -30)"><path d="M50,30 C58,17 66,11 76,11 C88.7,11 95,19.5 95,30 C95,40.5 88.7,49 76,49 C66,49 58,43 50,30 C42,17 34,11 24,11 C11.3,11 5,19.5 5,30 C5,40.5 11.3,49 24,49 C34,49 42,43 50,30 Z" fill="none" stroke="#033B47" stroke-width="6.4" stroke-linejoin="round"></path></g></g>
+        <g transform="translate(57.5 75) rotate(35) scale(0.54) translate(-55 -100)"><circle cx="55" cy="38" r="34" fill="#033B47"></circle><path d="M42.5,50 L67.5,50 L58.8,170 L55,197 L51.3,168 Z" fill="#033B47"></path></g>
+      </g>
+    </symbol>
+    <symbol id="apple" viewBox="0 0 24 28"><path d="M19.6 14.9c0-3.3 2.7-4.9 2.8-5-1.5-2.2-3.9-2.5-4.7-2.6-2-.2-3.9 1.2-4.9 1.2s-2.6-1.2-4.2-1.1C6.4 7.4 4.4 8.6 3.3 10.5c-2.3 3.9-.6 9.8 1.6 13 1.1 1.6 2.4 3.3 4.1 3.3 1.6-.1 2.3-1.1 4.2-1.1s2.5 1.1 4.2 1c1.7 0 2.8-1.6 3.9-3.2 1.2-1.8 1.7-3.6 1.8-3.7-.1 0-3.4-1.3-3.5-4.9zM16.4 5.2c.9-1.1 1.5-2.6 1.3-4.1-1.3.1-2.8.9-3.8 1.9-.8.9-1.5 2.5-1.3 4 1.4.1 2.9-.7 3.8-1.8z" fill="#fff"></path></symbol>
+    <symbol id="arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"></path></symbol>
+  </defs>
+</svg>
+
+<header class="hero">
+  <div class="wrap">
+    <nav class="nav" aria-label="Main">
+      <a class="brand" href="#top"><svg role="img" aria-label="Eonroamio"><use href="#logo"></use></svg><span>eonroamio</span></a>
+      <div class="nav-right">
+        <div class="nav-links">
+          <a href="#how">How it works</a>
+          <a href="#faq">FAQ</a>
+          <a href="#help">Support</a>
+          <a href="#help">Contact</a>
+        </div>
+        <a class="pill" href="https://app.eonroam.io">Open the app</a>
+      </div>
+      <button class="menu-btn" id="menu-open" type="button" aria-label="Open menu" aria-controls="menu" aria-expanded="false">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"></path></svg>
+      </button>
+    </nav>
+
+    <div class="hero-body" id="top">
+      <div>
+        <h1><span>Map</span><span class="acc">Memories<svg class="hero-route" viewBox="0 0 200 10" aria-hidden="true"><path d="M3 6 C40 1, 70 9, 105 5 S170 2, 195 5.5"></path><circle cx="195" cy="5.5" r="3.4"></circle></svg></span></h1>
+        <p>Upload your travel photos and Eonroamio automatically draws the route.</p>
+        <div class="btns">
+          <a class="btn btn-store" href="https://apps.apple.com/app/id0000000000" aria-label="Download on the App Store"><svg width="23" height="27" aria-hidden="true"><use href="#apple"></use></svg><span class="s"><small>Download on the</small><b>App Store</b></span></a>
+          <a class="btn btn-web" href="https://app.eonroam.io">Open in your browser <svg width="18" height="18" aria-hidden="true"><use href="#arrow"></use></svg></a>
+        </div>
+      </div>
+
+      <div class="stage">
+        <div class="phone">
+          <div class="screen">
+            <img src="/images/Home.png" alt="Eonroamio home screen preview" />
+          </div>
+        </div>
+
+        <div class="eonft-fit"><div class="eonft-ticket"><div class="eonft-top"><div class="eonft-head"><span class="eonft-number"><svg class="eonft-head-plane" width="1.1em" height="1.1em" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M21 16v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"></path></svg>UA 1175</span><span class="eonft-date">Tue, Sep 29</span></div><div class="eonft-route"><div class="eonft-end"><div class="eonft-code">SFO</div><div class="eonft-city">San Francisco</div></div><div class="eonft-path"><svg class="eonft-arc" viewBox="0 0 100 44" preserveAspectRatio="none" aria-hidden="true"><path d="M4 34 Q50 -2 96 34" fill="none" stroke="#2b83c1" stroke-width="1.6" stroke-dasharray="3 3.5" vector-effect="non-scaling-stroke"></path><circle cx="4" cy="34" r="3" class="eonft-arc-from" stroke-width="1.6" vector-effect="non-scaling-stroke"></circle><circle cx="96" cy="34" r="3" fill="#2b83c1" vector-effect="non-scaling-stroke"></circle></svg><svg class="eonft-plane" width="1em" height="1em" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M21 16v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"></path></svg><div class="eonft-duration">5h 25m</div></div><div class="eonft-end eonft-end-arr"><div class="eonft-code">HNL</div><div class="eonft-city">Honolulu</div></div></div></div><div class="eonft-bottom"><div class="eonft-when"><div class="eonft-label">Departs</div><div class="eonft-time eonft-ontime">9:16 AM</div><div class="eonft-was"><s>9:20 AM</s></div></div><div class="eonft-when eonft-when-arr"><div class="eonft-label">Arrives</div><div class="eonft-time eonft-plain">11:45 AM</div></div></div></div></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="how wrap" id="how">
+    <span class="eyebrow">How it works</span>
+    <h2 class="h2">Your photos already know where you went.</h2>
+    <div class="steps">
+      <div class="step">
+        <div class="ill">
+          <svg width="240" height="150" viewBox="0 0 240 150" aria-hidden="true">
+            <g transform="rotate(-8 70 80)"><rect x="30" y="35" width="80" height="80" rx="14" fill="#FFCDC0" stroke="#fff" stroke-width="4"></rect><path d="M44 100 L64 72 L78 88 L88 78 L100 100 Z" fill="#E54F36" opacity=".5"></path></g>
+            <g transform="rotate(6 170 80)"><rect x="130" y="35" width="80" height="80" rx="14" fill="#C3E5EE" stroke="#fff" stroke-width="4"></rect><path d="M144 100 L164 72 L178 88 L188 78 L200 100 Z" fill="#117588" opacity=".45"></path></g>
+            <rect x="80" y="25" width="80" height="80" rx="14" fill="#BAE19A" stroke="#fff" stroke-width="4"></rect>
+            <path d="M94 90 L114 62 L128 78 L138 68 L150 90 Z" fill="#2F9E5F" opacity=".5"></path>
+            <path d="M120 150 C120 150 104 132 104 121 A16 16 0 0 1 136 121 C136 132 120 150 120 150 Z" fill="#E54F36" stroke="#fff" stroke-width="3"></path>
+            <circle cx="120" cy="121" r="5" fill="#fff"></circle>
+          </svg>
+        </div>
+        <span class="n">01</span>
+        <h3>Add your photos</h3>
+        <p>Each photo lands on the map where it was taken.</p>
+        <span class="note"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 11v6M12 7.5v.01"></path></svg>A photo with no location? You tag its place and time.</span>
+      </div>
+      <div class="step">
+        <div class="ill">
+          <svg width="260" height="150" viewBox="0 0 260 150" aria-hidden="true">
+            <path d="M18 34 Q 54 -4 90 40" stroke="#2B83C1" stroke-width="4" stroke-dasharray="2 9" stroke-linecap="round" fill="none"></path>
+            <path d="M90 40 C110 50 120 75 140 80" stroke="#E54F36" stroke-width="5" stroke-linecap="round" fill="none"></path>
+            <path d="M140 80 C165 86 185 82 205 95" stroke="#fff" stroke-width="7" stroke-linecap="round" fill="none"></path>
+            <path d="M140 80 C165 86 185 82 205 95" stroke="#6A4FD8" stroke-width="3" stroke-linecap="round" fill="none"></path>
+            <path d="M140 80 C165 86 185 82 205 95" stroke="#6A4FD8" stroke-width="8" stroke-dasharray="1.8 9" fill="none"></path>
+            <path d="M205 95 C220 105 228 118 240 128" stroke="#2F9E5F" stroke-width="4.5" stroke-linecap="round" fill="none"></path>
+            <circle cx="18" cy="34" r="7" fill="#fff" stroke="#2B83C1" stroke-width="3"></circle>
+            <circle cx="90" cy="40" r="7" fill="#fff" stroke="#2B83C1" stroke-width="3"></circle>
+            <circle cx="140" cy="80" r="7" fill="#E54F36" stroke="#fff" stroke-width="3"></circle>
+            <circle cx="205" cy="95" r="7" fill="#6A4FD8" stroke="#fff" stroke-width="3"></circle>
+            <circle cx="240" cy="128" r="7" fill="#E54F36" stroke="#fff" stroke-width="3"></circle>
+            <g font-family="Geist, sans-serif" font-size="13" font-weight="600">
+              <text x="30" y="66" fill="#1F6C9E">Flight</text>
+              <text x="74" y="84" fill="#BD3B26">Drive</text>
+              <text x="150" y="116" fill="#6A4FD8">Train</text>
+              <text x="198" y="146" fill="#23784A">Walk</text>
+            </g>
+          </svg>
+        </div>
+        <span class="n">02</span>
+        <h3>See the route</h3>
+        <p>Stops join up in the order you visited them. Drives, walks, trains and flights each get their own line.</p>
+      </div>
+      <div class="step">
+        <div class="ill">
+          <div class="chips"><span class="chip on">Everyone</span><span class="chip">Followers</span><span class="chip">Friends</span></div>
+          <div class="link">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#BD3B26" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"></path></svg>
+            app.eonroam.io/s/7Hk2Qm9x
+          </div>
+        </div>
+        <span class="n">03</span>
+        <h3>Choose who sees it</h3>
+        <p>In the app, you choose who can see each route: everyone, your followers, or friends. You can also make a public share link which is visible to everyone.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="features">
+    <div class="wrap">
+      <span class="eyebrow">What's in a trip</span>
+      <h2 class="h2">More than pins on a map.</h2>
+      <div class="fgrid">
+        <div class="feat">
+          <div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#BD3B26" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="13" height="11" rx="2"></rect><path d="M3 12l3.5-3.5 3 3 2-2 4.5 4.5"></path><path d="M19 13.5s-3-2.7-3-5a3 3 0 0 1 6 0c0 2.3-3 5-3 5z"></path></svg></div>
+          <div><h3>Photos on the map</h3><p>Every photo is pinned to the spot where it was taken, so the map shows where each moment happened.</p></div>
+        </div>
+        <div class="feat">
+          <div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#BD3B26" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 16l20-6-3-2-7 2-5-5-2 1 3 5-4 1-2-2-1 1z"></path></svg></div>
+          <div><h3>Flights</h3><p>Add a flight number. The leg shows the airline, the departure and arrival times, and whether it landed on time.</p></div>
+        </div>
+        <div class="feat">
+          <div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#BD3B26" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="3" width="14" height="13" rx="3"></rect><path d="M5 10h14M9 13h.01M15 13h.01M8 16l-2 4M16 16l2 4M7.5 19h9"></path></svg></div>
+          <div><h3>Trains</h3><p>Add where the train started and ended, and when it left and arrived. The leg is drawn as a train track.</p></div>
+        </div>
+        <div class="feat">
+          <div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#BD3B26" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"></path></svg></div>
+          <div><h3>Likes and comments</h3><p>React to a photo, a stop, a flight, a train, or the whole route.</p></div>
+        </div>
+        <div class="feat">
+          <div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#BD3B26" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 4h12v16l-6-4-6 4z"></path></svg></div>
+          <div><h3>Save for later</h3><p>Save a photo, stop, flight, train or a whole route to come back to.</p></div>
+        </div>
+        <div class="feat">
+          <div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#BD3B26" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.5"></circle><path d="M2.5 20a6.5 6.5 0 0 1 13 0M19 8v6M16 11h6"></path></svg></div>
+          <div><h3>Follow people</h3><p>Follow others, and let others follow you. When you follow each other, you become friends.</p><span class="note"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 11v6M12 7.5v.01"></path></svg>You can choose to approve each follow request first.</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq wrap" id="faq">
+    <div>
+      <span class="eyebrow">FAQ</span>
+      <h2 class="h2">Questions</h2>
+      <div class="qs">
+        <details open>
+          <summary>Do I need an account to see a trip?<svg class="pm" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00313E" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M12 5v14"></path></svg></summary>
+          <p>No. A shared link opens in any browser. You need an account to post trips, like, comment, save or follow.</p>
+        </details>
+        <details>
+          <summary>What if a photo has no location?<svg class="pm" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00313E" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M12 5v14"></path></svg></summary>
+          <p>Eonroamio asks you to tag the place and time for that photo.</p>
+        </details>
+        <details>
+          <summary>Who can see my trips?<svg class="pm" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00313E" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M12 5v14"></path></svg></summary>
+          <p>You choose for each route: everyone, your followers, or friends only. Please note: a shared link is visible to everyone.</p>
+        </details>
+        <details>
+          <summary>Is Eonroamio free?<svg class="pm" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00313E" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M12 5v14"></path></svg></summary>
+          <p>Yes. Eonroamio is always free to use, on iPhone and on the web.</p>
+        </details>
+        <details>
+          <summary>How do I delete my account?<svg class="pm" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00313E" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M12 5v14"></path></svg></summary>
+          <p>Tap your avatar, then Settings → Help &amp; Support → Delete account. Or email hello@eonroam.io from the email address you registered with.</p>
+        </details>
+      </div>
+    </div>
+
+    <aside class="help" id="help">
+      <h2>Still need help?</h2>
+      <a class="hcard" href="#faq">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#BD3B26" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.6.3-1 .9-1 1.6V14M12 17.5v.01"></path></svg>
+        <div><b>Support</b><span>Answers to common questions about posting, sharing and your account.</span></div>
+      </a>
+      <a class="hcard" href="mailto:hello@eonroam.io">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#BD3B26" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"></rect><path d="M3.5 6.5l8.5 6.5 8.5-6.5"></path></svg>
+        <div><b>Contact</b><span>hello@eonroam.io</span></div>
+      </a>
+      <a class="hcard" href="https://app.eonroam.io/copyright/notice">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#BD3B26" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M15 9.5a3.5 3.5 0 1 0 0 5"></path></svg>
+        <div><b>Report a copyright issue</b><span>Send a takedown notice for a photo posted without your permission.</span></div>
+      </a>
+    </aside>
+  </section>
+
+  <section class="band">
+    <div>
+      <h2>Take it on your next trip.</h2>
+      <p>Free on iPhone, or in any browser at app.eonroam.io.</p>
+    </div>
+    <div class="btns">
+      <a class="btn btn-store" href="https://apps.apple.com/app/id0000000000" aria-label="Download on the App Store"><svg width="23" height="27" aria-hidden="true"><use href="#apple"></use></svg><span class="s"><small>Download on the</small><b>App Store</b></span></a>
+      <a class="btn btn-web" href="https://app.eonroam.io">Open in your browser <svg width="18" height="18" aria-hidden="true"><use href="#arrow"></use></svg></a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="ftop">
+      <div style="display:flex;flex-direction:column;gap:14px">
+        <a class="brand" href="#top"><svg role="img" aria-label="Eonroamio"><use href="#logo"></use></svg><span>eonroamio</span></a>
+        <span style="font-size:15px">Map Your Memories</span>
+      </div>
+      <div class="fcols">
+        <div class="fcol"><h4>Product</h4><a href="https://app.eonroam.io">Open the app</a><a href="https://apps.apple.com/app/id0000000000">iPhone app</a><a href="#how">How it works</a></div>
+        <div class="fcol"><h4>Help</h4><a href="#faq">FAQ</a><a href="#help">Support</a><a href="mailto:hello@eonroam.io">Contact</a></div>
+        <div class="fcol"><h4>Legal</h4><a href="https://app.eonroam.io/tos">Terms of Service</a><a href="https://app.eonroam.io/privacy">Privacy Policy</a><a href="https://app.eonroam.io/copyright">Copyright &amp; DMCA</a></div>
+      </div>
+    </div>
+    <div class="fbot">
+      <span>© 2026 Eonroamio LLC</span>
+      <span>Apple and the Apple logo are trademarks of Apple Inc.</span>
+    </div>
+  </div>
+</footer>
+
+<div class="menu" id="menu" hidden>
+  <div class="nav">
+    <a class="brand" href="#top"><svg role="img" aria-label="Eonroamio"><use href="#logo"></use></svg><span>eonroamio</span></a>
+    <button class="menu-btn" id="menu-close" type="button" aria-label="Close menu" style="display:flex">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"></path></svg>
+    </button>
+  </div>
+  <nav class="menu-main" aria-label="Menu">
+    <a href="#how">How it works</a>
+    <a href="#faq">FAQ</a>
+    <a href="#help">Support</a>
+    <a href="#help">Contact</a>
+  </nav>
+  <div class="menu-legal">
+    <a href="https://app.eonroam.io/tos">Terms of Service</a>
+    <a href="https://app.eonroam.io/privacy">Privacy Policy</a>
+    <a href="https://app.eonroam.io/copyright">Copyright &amp; DMCA</a>
+  </div>
+  <div class="btns">
+    <a class="btn btn-store" href="https://apps.apple.com/app/id0000000000" aria-label="Download on the App Store"><svg width="23" height="27" aria-hidden="true"><use href="#apple"></use></svg><span class="s"><small>Download on the</small><b>App Store</b></span></a>
+    <a class="btn btn-web" href="https://app.eonroam.io">Open in your browser <svg width="18" height="18" aria-hidden="true"><use href="#arrow"></use></svg></a>
+  </div>
+</div>
+</body>
+</html>

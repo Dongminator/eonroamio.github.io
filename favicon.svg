@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 136 136" role="img" aria-label="Eonroam">
+    <title>Eonroam</title>
+    <rect width="136" height="136" rx="30" fill="#ED5A3B" />
+    <g transform="translate(9.38 -8.89) scale(1.0222)">
+<defs>
+        <mask id="eon-pin-gap" maskUnits="userSpaceOnUse" x="-60" y="-60" width="320" height="320">
+            <rect x="-60" y="-60" width="320" height="320" fill="#fff" />
+            <g transform="translate(57.5 75) rotate(35)">
+                <rect x="-18.86" y="-130" width="37.72" height="260" fill="#000" />
+            </g>
+        </mask>
+    </defs>
+    <g mask="url(#eon-pin-gap)">
+        <g transform="translate(57.5 75) scale(1.29) rotate(90) scale(0.9 1.2) translate(-50 -30)">
+            <path d="M50,30 C58,17 66,11 76,11 C88.7,11 95,19.5 95,30 C95,40.5 88.7,49 76,49 C66,49 58,43 50,30 C42,17 34,11 24,11 C11.3,11 5,19.5 5,30 C5,40.5 11.3,49 24,49 C34,49 42,43 50,30 Z" fill="none" stroke="#033B47"
+                  stroke-width="6.4" stroke-linejoin="round" />
+        </g>
+    </g>
+    <g transform="translate(57.5 75) rotate(35) scale(0.54) translate(-55 -100)">
+        <circle cx="55" cy="38" r="34" fill="#033B47" />
+                <path d="M42.5,50 L67.5,50 L58.8,170 L55,197 L51.3,168 Z" fill="#033B47" />
+    </g>
+    </g>
+</svg>

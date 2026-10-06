@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Page not found · Eonroamio</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <script>
+    /*  The iOS app builds share links on eonroam.io, and links already sent
+        and the iOS legal links use eonroam.io paths too. Those pages belong to
+        the web app at app.eonroam.io. GitHub Pages has no server-side
+        redirects, so this page forwards them with their query and hash. */
+    (function () {
+      var path = location.pathname;
+      var appPaths = /^\/(s\/[^/]+\/?|privacy(\.html)?|tos(\.html)?|copyright(\.html)?|copyright\/notice|dmca|admin\/dmca)\/?$/;
+      if (appPaths.test(path)) {
+        location.replace('https://app.eonroam.io' + path + location.search + location.hash);
+      }
+    })();
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&family=Geist:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    html,body{height:100%;margin:0}
+    body{background:#00252E;color:#C3E5EE;font-family:'Geist',-apple-system,system-ui,sans-serif;display:flex;align-items:center;justify-content:center;padding:24px;box-sizing:border-box;text-align:center}
+    h1{margin:0 0 12px;font-family:'Space Grotesk',-apple-system,system-ui,sans-serif;font-size:44px;color:#fff;letter-spacing:-.02em}
+    p{margin:0 0 28px;font-size:17px}
+    a{display:inline-flex;align-items:center;height:52px;padding:0 24px;border-radius:14px;background:#C23E28;color:#fff;font-weight:600;text-decoration:none}
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Page not found</h1>
+    <p>This address doesn't match any page on eonroam.io.</p>
+    <a href="/">Go to the home page</a>
+  </main>
+</body>
+</html>
