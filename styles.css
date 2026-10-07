@@ -129,7 +129,7 @@ h1,h2,h3{text-wrap:balance}
 .front{position:relative;min-height:260px;padding:0}
 .tall .front{min-height:340px}
 .back{transform:rotateY(180deg)}
-.fhead{position:absolute;z-index:1;top:12px;left:12px;display:flex;align-items:center;gap:8px;padding:5px 14px 5px 5px;border-radius:999px;background:rgba(254,253,251,.95);box-shadow:0 4px 12px rgba(0,37,46,.14)}
+.fhead{position:absolute;top:12px;left:12px;display:flex;align-items:center;gap:8px;padding:5px 14px 5px 5px;border-radius:999px;background:rgba(254,253,251,.95);box-shadow:0 4px 12px rgba(0,37,46,.14)}
 .fhead h3{font-size:16px}
 .flip-btn{position:absolute;top:12px;right:12px;z-index:1;width:36px;height:36px;padding:0;border:0;border-radius:50%;background:rgba(254,253,251,.92);box-shadow:0 1px 4px rgba(0,37,46,.14);color:var(--slate);display:flex;align-items:center;justify-content:center;cursor:pointer;transition:background .2s,transform .6s cubic-bezier(.2,.7,.2,1)}
 .flip:hover .flip-btn{background:#fff}
@@ -251,8 +251,6 @@ footer{background:var(--scrim);color:var(--ink200);padding-block:72px 44px}
   .back{padding:20px}
   .front{min-height:240px}
   .tall .front{min-height:290px}
-  .flip-in{transition:transform .6s cubic-bezier(.2,.7,.2,1),height .45s ease}
-  .face{align-self:start}
 }
 /* phone */
 @media (max-width:600px){
