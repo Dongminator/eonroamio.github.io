@@ -44,7 +44,9 @@ h1,h2,h3{text-wrap:balance}
 .btn-store .s{display:flex;flex-direction:column;line-height:1.05;text-align:left}
 .btn-store .s small{font-size:11px;font-weight:500}
 .btn-store .s b{font-size:21px;font-weight:600;letter-spacing:-.01em}
-.btn-store.is-soon{opacity:.55;cursor:not-allowed}
+.btn-store.is-soon{position:relative;cursor:not-allowed}
+.btn-store.is-soon > svg,.btn-store.is-soon > .s{opacity:.55}
+.soon-pill{position:absolute;top:0;right:10px;transform:translateY(-50%);padding:3px 9px;border-radius:999px;background:var(--gold);color:var(--ink);font-size:11px;font-weight:700;line-height:1.2;white-space:nowrap}
 .btn-web{background:var(--coral-deep)}
 .btn-web:hover{background:var(--coral-press)}
 
