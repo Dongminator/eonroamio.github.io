@@ -44,6 +44,7 @@ h1,h2,h3{text-wrap:balance}
 .btn-store .s{display:flex;flex-direction:column;line-height:1.05;text-align:left}
 .btn-store .s small{font-size:11px;font-weight:500}
 .btn-store .s b{font-size:21px;font-weight:600;letter-spacing:-.01em}
+.btn-store.is-soon{opacity:.55;cursor:not-allowed}
 .btn-web{background:var(--coral-deep)}
 .btn-web:hover{background:var(--coral-press)}
 
@@ -219,6 +220,7 @@ footer{background:var(--scrim);color:var(--ink200);padding-block:72px 44px}
 .fcol h4{margin:0 0 6px;font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--ink300)}
 .fcol a{color:var(--ink100);padding-block:6px}
 .fcol a:hover{color:var(--gold)}
+.fcol .soon{color:var(--ink300);padding-block:6px}
 .ftag{font-size:15px}
 .ftag:hover{color:var(--gold);text-decoration:underline;text-underline-offset:3px}
 .fbot{margin-top:64px;padding-top:26px;border-top:1px solid rgba(195,229,238,.18);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:14px;color:var(--ink300)}
