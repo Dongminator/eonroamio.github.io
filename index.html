@@ -3,15 +3,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>Eonroamio · Map Your Memories</title>
-  <meta name="description" content="Upload your travel photos and Eonroamio automatically draws the route.">
+  <title>Eonroamio · Map memories. Plan trips.</title>
+  <meta name="description" content="Share your trips as a map and see where others went. Plan your next trip with AI.">
   <meta name="theme-color" content="#00252E">
   <meta name="format-detection" content="telephone=no">
   <link rel="canonical" href="https://eonroam.io/">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://eonroam.io/">
-  <meta property="og:title" content="Eonroamio · Map Your Memories">
-  <meta property="og:description" content="Upload your travel photos and Eonroamio automatically draws the route.">
+  <meta property="og:title" content="Eonroamio · Map memories. Plan trips.">
+  <meta property="og:description" content="Share your trips as a map and see where others went. Plan your next trip with AI.">
   <meta property="og:image" content="https://eonroam.io/images/logo512.png">
   <meta name="twitter:card" content="summary">
   <link rel="icon" href="/favicon.ico" sizes="48x48 32x32 16x16">
@@ -48,8 +48,8 @@
       <a class="brand" href="#top"><svg role="img" aria-label="Eonroamio"><use href="#logo"></use></svg><span>eonroamio</span></a>
       <div class="nav-right">
         <div class="nav-links">
-          <a href="#features">Features</a>
-    <a href="#how">How it works</a>
+          <a href="#share">Share</a>
+          <a href="#plan">Plan</a>
           <a href="#faq">FAQ</a>
           <a href="#help">Contact</a>
         </div>
@@ -62,8 +62,8 @@
 
     <div class="hero-body" id="top">
       <div>
-        <h1><span>Map</span><span class="acc">Memories<svg class="hero-route" viewBox="0 0 200 10" aria-hidden="true"><path d="M3 6 C40 1, 70 9, 105 5 S170 2, 195 5.5"></path><circle cx="195" cy="5.5" r="3.4"></circle></svg></span></h1>
-        <p>Upload your travel photos and Eonroamio automatically draws the route.</p>
+        <h1><span>Map <span class="acc">memories.<svg class="hero-route" viewBox="0 0 200 10" aria-hidden="true"><path d="M3 6 C40 1, 70 9, 105 5 S170 2, 195 5.5"></path><circle cx="195" cy="5.5" r="3.4"></circle></svg></span></span><span>Plan <span class="acc-plan">trips.</span></span></h1>
+        <p>Share your trips as a map and see where others went. Plan your next trip with AI.</p>
         <div class="btns">
           <span class="btn btn-store is-soon" role="link" aria-disabled="true" aria-label="Coming soon to the App Store"><svg width="23" height="27" aria-hidden="true"><use href="#apple"></use></svg><span class="s"><small>Download on the</small><b>App Store</b></span><span class="soon-pill" aria-hidden="true">Coming soon</span></span>
           <a class="btn btn-web" href="https://app.eonroam.io">Open in your browser <svg width="18" height="18" aria-hidden="true"><use href="#arrow"></use></svg></a>
@@ -71,23 +71,98 @@
       </div>
 
       <div class="stage">
-        <div class="phone">
+        <div class="phone phone-share">
           <div class="screen">
-            <img src="/images/Home.png" alt="Eonroamio home screen preview" />
+            <img src="/images/Home.png" alt="Eonroamio home screen with trips on a map" />
           </div>
+          <span class="phone-tag">Share</span>
         </div>
-
-        <div class="eonft-fit"><div class="eonft-ticket"><div class="eonft-top"><div class="eonft-head"><span class="eonft-number"><svg class="eonft-head-plane" width="1.1em" height="1.1em" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M21 16v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"></path></svg>UA 1175</span><span class="eonft-date">Tue, Sep 29</span></div><div class="eonft-route"><div class="eonft-end"><div class="eonft-code">SFO</div><div class="eonft-city">San Francisco</div></div><div class="eonft-path"><svg class="eonft-arc" viewBox="0 0 100 44" preserveAspectRatio="none" aria-hidden="true"><path d="M4 34 Q50 -2 96 34" fill="none" stroke="#2b83c1" stroke-width="1.6" stroke-dasharray="3 3.5" vector-effect="non-scaling-stroke"></path><circle cx="4" cy="34" r="3" class="eonft-arc-from" stroke-width="1.6" vector-effect="non-scaling-stroke"></circle><circle cx="96" cy="34" r="3" fill="#2b83c1" vector-effect="non-scaling-stroke"></circle></svg><svg class="eonft-plane" width="1em" height="1em" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M21 16v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"></path></svg><div class="eonft-duration">5h 25m</div></div><div class="eonft-end eonft-end-arr"><div class="eonft-code">HNL</div><div class="eonft-city">Honolulu</div></div></div></div><div class="eonft-bottom"><div class="eonft-when"><div class="eonft-label">Departs</div><div class="eonft-time eonft-ontime">9:16 AM</div><div class="eonft-was"><s>9:20 AM</s></div></div><div class="eonft-when eonft-when-arr"><div class="eonft-label">Arrives</div><div class="eonft-time eonft-plain">11:45 AM</div></div></div></div></div>
+        <div class="phone phone-plan">
+          <div class="screen">
+            <img src="/images/plan-hero.webp" alt="A planned day in San Francisco with stops, times and travel between them" />
+          </div>
+          <span class="phone-tag">Plan</span>
+        </div>
       </div>
     </div>
   </div>
 </header>
 
 <main>
-  <section class="features" id="features">
+  <section class="cycle wrap" aria-label="How Eonroamio fits a trip">
+    <ol class="cycle-steps">
+      <li><a class="cstep cs-share" href="#share"><span class="cn">1 · Share &amp; explore</span><span class="ct">Share your trip photos and travel routes, explore experiences from others</span></a></li>
+      <li class="carr" aria-hidden="true"><svg width="22" height="22"><use href="#arrow"></use></svg></li>
+      <li><a class="cstep cs-plan" href="#plan"><span class="cn">2 · Plan</span><span class="ct">AI plans your next trip based on your preferences</span></a></li>
+      <li class="carr" aria-hidden="true"><svg width="22" height="22"><use href="#arrow"></use></svg></li>
+      <li><div class="cstep cs-go"><span class="cn">3 · Enjoy your trip</span><span class="ct">Follow your plan or make live adjustments</span></div></li>
+    </ol>
+    <div class="cycle-back">
+      <svg class="cycle-loop" viewBox="0 0 1000 40" preserveAspectRatio="none" aria-hidden="true"><path d="M835 2 C835 34, 165 34, 165 6"></path><path class="tip" d="M157 14 L165 3 L173 14"></path></svg>
+      <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 11a8 8 0 0 0-14.3-4.9L4 8M4 3v5h5"></path></svg>Share your trip with others, and keep it to remember</span>
+    </div>
+  </section>
+
+  <section class="part part-share" id="share">
     <div class="wrap">
-      <span class="eyebrow">What's in a trip</span>
-      <h2 class="h2">More than pins on a map.</h2>
+      <span class="eyebrow">1 · Share &amp; explore</span>
+      <h2 class="h2">Trips on a map.</h2>
+      <div class="steps">
+        <div class="step">
+          <div class="ill">
+            <svg width="240" height="150" viewBox="0 0 240 150" aria-hidden="true">
+              <g transform="rotate(-8 70 80)"><rect x="30" y="35" width="80" height="80" rx="14" fill="#FFCDC0" stroke="#fff" stroke-width="4"></rect><path d="M44 100 L64 72 L78 88 L88 78 L100 100 Z" fill="#E54F36" opacity=".5"></path></g>
+              <g transform="rotate(6 170 80)"><rect x="130" y="35" width="80" height="80" rx="14" fill="#C3E5EE" stroke="#fff" stroke-width="4"></rect><path d="M144 100 L164 72 L178 88 L188 78 L200 100 Z" fill="#117588" opacity=".45"></path></g>
+              <rect x="80" y="25" width="80" height="80" rx="14" fill="#BAE19A" stroke="#fff" stroke-width="4"></rect>
+              <path d="M94 90 L114 62 L128 78 L138 68 L150 90 Z" fill="#2F9E5F" opacity=".5"></path>
+              <path d="M120 150 C120 150 104 132 104 121 A16 16 0 0 1 136 121 C136 132 120 150 120 150 Z" fill="#E54F36" stroke="#fff" stroke-width="3"></path>
+              <circle cx="120" cy="121" r="5" fill="#fff"></circle>
+            </svg>
+          </div>
+          <span class="n">01</span>
+          <h3>Add your photos</h3>
+          <p>Pick photos from your trip. Each one appears on the map where you took it.</p>
+          <span class="note"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 11v6M12 7.5v.01"></path></svg>No location on a photo? Just pick the place yourself.</span>
+        </div>
+        <div class="step">
+          <div class="ill">
+            <svg width="260" height="150" viewBox="0 0 260 150" aria-hidden="true">
+              <path d="M18 34 Q 54 -4 90 40" stroke="#2B83C1" stroke-width="4" stroke-dasharray="2 9" stroke-linecap="round" fill="none"></path>
+              <path d="M90 40 C110 50 120 75 140 80" stroke="#E54F36" stroke-width="5" stroke-linecap="round" fill="none"></path>
+              <path d="M140 80 C165 86 185 82 205 95" stroke="#fff" stroke-width="7" stroke-linecap="round" fill="none"></path>
+              <path d="M140 80 C165 86 185 82 205 95" stroke="#6A4FD8" stroke-width="3" stroke-linecap="round" fill="none"></path>
+              <path d="M140 80 C165 86 185 82 205 95" stroke="#6A4FD8" stroke-width="8" stroke-dasharray="1.8 9" fill="none"></path>
+              <path d="M205 95 C220 105 228 118 240 128" stroke="#2F9E5F" stroke-width="4.5" stroke-linecap="round" fill="none"></path>
+              <circle cx="18" cy="34" r="7" fill="#fff" stroke="#2B83C1" stroke-width="3"></circle>
+              <circle cx="90" cy="40" r="7" fill="#fff" stroke="#2B83C1" stroke-width="3"></circle>
+              <circle cx="140" cy="80" r="7" fill="#E54F36" stroke="#fff" stroke-width="3"></circle>
+              <circle cx="205" cy="95" r="7" fill="#6A4FD8" stroke="#fff" stroke-width="3"></circle>
+              <circle cx="240" cy="128" r="7" fill="#E54F36" stroke="#fff" stroke-width="3"></circle>
+              <g font-family="Geist, sans-serif" font-size="13" font-weight="600">
+                <text x="30" y="66" fill="#1F6C9E">Flight</text>
+                <text x="74" y="84" fill="#BD3B26">Drive</text>
+                <text x="150" y="116" fill="#6A4FD8">Train</text>
+                <text x="198" y="146" fill="#23784A">Walk</text>
+              </g>
+            </svg>
+          </div>
+          <span class="n">02</span>
+          <h3>See your trip</h3>
+          <p>Your stops connect in the order you visited them, whether you drove, walked, took a train or flew.</p>
+        </div>
+        <div class="step">
+          <div class="ill">
+            <div class="opt"><span class="cap">In the app</span><div class="chips"><span class="chip on">Everyone</span><span class="chip">Followers</span><span class="chip">Friends</span></div></div>
+            <div class="opt"><span class="cap">Share link</span><div class="link">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#BD3B26" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"></path></svg>
+              app.eonroam.io/t/Y95B77X4
+            </div></div>
+          </div>
+          <span class="n">03</span>
+          <h3>Share it</h3>
+          <p>In the app, you choose who sees each trip: everyone, your followers, or only friends. A share link is different: anyone with the link can open it.</p>
+        </div>
+      </div>
       <div class="fgrid">
         <div class="feat flip tall">
           <div class="flip-in">
@@ -116,116 +191,116 @@
         <div class="feat flip tall">
           <div class="flip-in">
             <div class="face front">
+              <div class="shot"><div class="acts"><span class="act on"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 21s-7-4.5-9.5-9.5C1 7.5 4 4 7.5 4c2 0 3.5 1 4.5 2.5C13 5 14.5 4 16.5 4 20 4 23 7.5 21.5 11.5 19 16.5 12 21 12 21z" fill="currentColor" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"></path></svg><span class="n">284</span></span><span class="act on"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 12c0 4.4-4 8-9 8a10 10 0 01-3.6-.7L3 21l1.5-4.3A8 8 0 013 12c0-4.4 4-8 9-8s9 3.6 9 8z" fill="currentColor" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"></path></svg><span class="n">47</span></span><span class="act"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 4h12v16l-6-4-6 4z" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"></path></svg></span></div></div>
+              <div class="fhead"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#BD3B26" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M15.5 8.5l-2 5-5 2 2-5z"></path></svg></div><h3>Explore trips</h3></div>
+            </div>
+            <div class="face back" aria-hidden="true">
+              <div><h3>Explore trips</h3><p>See trips other travellers share.</p><p>Like or comment on a photo, a stop, a flight, a train or the whole trip.</p></div>
+            </div>
+          </div>
+          <button class="flip-btn" type="button" aria-expanded="false" aria-label="More about Explore trips"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 11a8 8 0 0 0-14.3-4.9L4 8M4 3v5h5M4 13a8 8 0 0 0 14.3 4.9L20 16M20 21v-5h-5"></path></svg></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="part part-plan" id="plan">
+    <div class="wrap">
+      <div class="plan-ey"><span class="eyebrow">2 · Plan</span><span class="ai-badge"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M10 3l1.9 5.6L17.5 10.5 11.9 12.4 10 18l-1.9-5.6L2.5 10.5 8.1 8.6z"></path><path d="M18.5 2.5l.8 2.2 2.2.8-2.2.8-.8 2.2-.8-2.2-2.2-.8 2.2-.8z"></path></svg>Plan with AI</span></div>
+      <h2 class="h2">Add places. AI plans the days.</h2>
+      <div class="fgrid">
+        <div class="feat flip tall">
+          <div class="flip-in">
+            <div class="face front">
+              <div class="shot"><img class="cover" src="/images/plan-add-places.webp" width="1000" height="2167" style="object-position:50% 58%" alt="San Francisco sights with travellers' photos and an add button on each" loading="lazy" decoding="async"></div>
+              <div class="fhead"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#117588" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-6-5.3-6-10a6 6 0 0 1 12 0c0 4.7-6 10-6 10z"></path><path d="M12 8v5M9.5 10.5h5"></path></svg></div><h3>Add places</h3></div>
+            </div>
+            <div class="face back" aria-hidden="true">
+              <div><h3>Add places</h3>
+                <p class="mode"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="6.5"></circle><path d="M16 16l4.5 4.5"></path></svg>Search a city and see where travellers went.</p>
+                <p class="mode"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-6-5.3-6-10a6 6 0 0 1 12 0c0 4.7-6 10-6 10z"></path><circle cx="12" cy="11" r="2"></circle></svg>Add stops yourself.</p>
+                <p class="mode"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M10 3l1.9 5.6L17.5 10.5 11.9 12.4 10 18l-1.9-5.6L2.5 10.5 8.1 8.6z"></path><path d="M18.5 2.5l.8 2.2 2.2.8-2.2.8-.8 2.2-.8-2.2-2.2-.8 2.2-.8z"></path></svg>Paste a note, and AI finds the places.</p>
+              </div>
+            </div>
+          </div>
+          <button class="flip-btn" type="button" aria-expanded="false" aria-label="More about Add places"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 11a8 8 0 0 0-14.3-4.9L4 8M4 3v5h5M4 13a8 8 0 0 0 14.3 4.9L20 16M20 21v-5h-5"></path></svg></button>
+        </div>
+        <div class="feat flip tall">
+          <div class="flip-in">
+            <div class="face front">
+              <div class="shot"><img class="cover" src="/images/plan-days.webp" width="1000" height="2167" alt="A planned day in San Francisco with times and travel between stops" loading="lazy" decoding="async"></div>
+              <div class="fhead"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#117588" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="5" width="16" height="15" rx="1.5"></rect><path d="M4 10h16M8 3v4M16 3v4"></path></svg></div><h3>Plan days</h3></div>
+            </div>
+            <div class="face back" aria-hidden="true">
+              <div><h3>Plan days</h3><p>AI sorts the places into days and puts each day in a sensible order. It estimates how long to stay at each place and how to get from one to the next.</p><p>Mark a place Must stop or Optional, and AI keeps your choices.</p></div>
+            </div>
+          </div>
+          <button class="flip-btn" type="button" aria-expanded="false" aria-label="More about Plan days"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 11a8 8 0 0 0-14.3-4.9L4 8M4 3v5h5M4 13a8 8 0 0 0 14.3 4.9L20 16M20 21v-5h-5"></path></svg></button>
+        </div>
+        <div class="feat flip tall">
+          <div class="flip-in">
+            <div class="face front">
+              <div class="shot"><div class="ps">
+                <div class="ps-head"><b>Share this plan</b><span>San Francisco · Fri 20 – Sun 22 Nov</span></div>
+                <div class="ps-link"><span>https://app.eonroam.io/p/WTA5MQ7E</span><i><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0f505d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2.5"></rect><path d="M5.5 15H5a1.5 1.5 0 0 1-1.5-1.5V5A1.5 1.5 0 0 1 5 3.5h8.5A1.5 1.5 0 0 1 15 5v.5"></path></svg></i></div>
+                <div class="ps-reach"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"></path></svg><span>Anyone with this link can open the plan, without an account.</span></div>
+                <div class="ps-blur"><i><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#117588" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 11l8-7 8 7"></path><path d="M6 9.5V20h12V9.5"></path><path d="M10 20v-5h4v5"></path></svg></i><span><b>Blur stay location</b><small>Viewers see Palo Alto.</small></span><em aria-hidden="true"><u></u></em></div>
+              </div></div>
+              <div class="fhead"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#117588" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 13v6a1.5 1.5 0 0 0 1.5 1.5h13A1.5 1.5 0 0 0 20 19v-6M12 3.5v12M7 8.5l5-5 5 5"></path></svg></div><h3>Share plan</h3></div>
+            </div>
+            <div class="face back" aria-hidden="true">
+              <div><h3>Share plan</h3><p>Send a link. Anyone can open it in a browser, no account needed.</p><p>Blur stay location shows only the city of your stay, not its address.</p></div>
+            </div>
+          </div>
+          <button class="flip-btn" type="button" aria-expanded="false" aria-label="More about Share plan"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 11a8 8 0 0 0-14.3-4.9L4 8M4 3v5h5M4 13a8 8 0 0 0 14.3 4.9L20 16M20 21v-5h-5"></path></svg></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="part part-both" id="more">
+    <div class="wrap">
+      <h2 class="h2">For trips and plans.</h2>
+      <div class="fgrid">
+        <div class="feat flip tall">
+          <div class="flip-in">
+            <div class="face front">
               <div class="shot"><img class="cover" src="/images/feat-bookmarks.webp" width="1000" height="1350" alt="Saved photos on a map of Japan" loading="lazy" decoding="async"></div>
               <div class="fhead"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#BD3B26" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 4h12v16l-6-4-6 4z"></path></svg></div><h3>Bookmarks</h3></div>
             </div>
             <div class="face back" aria-hidden="true">
-              <div><h3>Bookmarks</h3><p>Save photos, stops, flights, trains and whole trips. Sort them into collections, for example one for each city you want to visit.</p></div>
+              <div><h3>Bookmarks</h3><p>Save photos, stops, flights, trains and whole trips. Sort them into collections, for example one for each city you want to visit.</p><p>Open them while you plan.</p></div>
             </div>
           </div>
           <button class="flip-btn" type="button" aria-expanded="false" aria-label="More about Bookmarks"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 11a8 8 0 0 0-14.3-4.9L4 8M4 3v5h5M4 13a8 8 0 0 0 14.3 4.9L20 16M20 21v-5h-5"></path></svg></button>
         </div>
-        <div class="feat flip">
-          <div class="flip-in">
-            <div class="face front">
-              <div class="shot"><div class="acts"><span class="act on"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 21s-7-4.5-9.5-9.5C1 7.5 4 4 7.5 4c2 0 3.5 1 4.5 2.5C13 5 14.5 4 16.5 4 20 4 23 7.5 21.5 11.5 19 16.5 12 21 12 21z" fill="currentColor" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"></path></svg><span class="n">284</span></span><span class="act on"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 12c0 4.4-4 8-9 8a10 10 0 01-3.6-.7L3 21l1.5-4.3A8 8 0 013 12c0-4.4 4-8 9-8s9 3.6 9 8z" fill="currentColor" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"></path></svg><span class="n">47</span></span><span class="act"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 4h12v16l-6-4-6 4z" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"></path></svg></span></div></div>
-              <div class="fhead"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#BD3B26" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"></path></svg></div><h3>Likes &amp; comments</h3></div>
-            </div>
-            <div class="face back" aria-hidden="true">
-              <div><h3>Likes &amp; comments</h3><p>Like or comment on a single photo, a stop, a flight, a train or the whole trip.</p></div>
-            </div>
-          </div>
-          <button class="flip-btn" type="button" aria-expanded="false" aria-label="More about Likes and comments"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 11a8 8 0 0 0-14.3-4.9L4 8M4 3v5h5M4 13a8 8 0 0 0 14.3 4.9L20 16M20 21v-5h-5"></path></svg></button>
-        </div>
-        <div class="feat flip">
-          <div class="flip-in">
-            <div class="face front">
-              <div class="shot"><div class="share-card"><b>Trip to Japan</b><span><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"></path></svg>app.eonroam.io/s/Y95B77X4</span></div></div>
-              <div class="fhead"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#BD3B26" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 13v6a1.5 1.5 0 0 0 1.5 1.5h13A1.5 1.5 0 0 0 20 19v-6M12 3.5v12M7 8.5l5-5 5 5"></path></svg></div><h3>Share your trip</h3></div>
-            </div>
-            <div class="face back" aria-hidden="true">
-              <div><h3>Share your trip</h3><p>Send a link of your trip. Anyone can open it in a browser, no account needed. The link plays the trip stop by stop.</p></div>
-            </div>
-          </div>
-          <button class="flip-btn" type="button" aria-expanded="false" aria-label="More about Share your trip"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 11a8 8 0 0 0-14.3-4.9L4 8M4 3v5h5M4 13a8 8 0 0 0 14.3 4.9L20 16M20 21v-5h-5"></path></svg></button>
-        </div>
-        <div class="feat flip">
+        <div class="feat flip tall">
           <div class="flip-in">
             <div class="face front">
               <div class="shot"><div class="pf-card"><div class="pf-row"><span class="pf-back"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#00313E" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"></path></svg></span><svg class="pf-avatar" aria-hidden="true"><use href="#logo"></use></svg><div class="pf-id"><b>@eonroamio</b><span>Eonroamio</span></div></div><div class="pf-stats"><span class="pf-stat"><b>12</b><small>routes</small></span><i></i><span class="pf-stat"><b>86</b><small>followers</small></span><i></i><span class="pf-stat"><b>64</b><small>following</small></span><i></i><span class="pf-stat"><b class="acc">1.2K</b><small>likes</small></span></div></div></div>
               <div class="fhead"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#BD3B26" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.5"></circle><path d="M2.5 20a6.5 6.5 0 0 1 13 0M19 8v6M16 11h6"></path></svg></div><h3>Follow &amp; friends</h3></div>
             </div>
             <div class="face back" aria-hidden="true">
-              <div><h3>Follow &amp; friends</h3><p>Follow others and let them follow you. When you follow each other, you're friends. For each trip, you choose who sees it: everyone, followers, or only friends.</p><span class="note"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 11v6M12 7.5v.01"></path></svg>You can choose to approve each follow request first.</span></div>
+              <div><h3>Follow &amp; friends</h3><p>Follow others and let them follow you. When you follow each other, you're friends. For each trip, you choose who sees it: everyone, followers, or only friends.</p><p>When you search a city to plan, photos from people you follow come first.</p><span class="note"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 11v6M12 7.5v.01"></path></svg>You can choose to approve each follow request first.</span></div>
             </div>
           </div>
           <button class="flip-btn" type="button" aria-expanded="false" aria-label="More about Follow and friends"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 11a8 8 0 0 0-14.3-4.9L4 8M4 3v5h5M4 13a8 8 0 0 0 14.3 4.9L20 16M20 21v-5h-5"></path></svg></button>
         </div>
-      </div>
-      <div class="upcoming" hidden>
-        <span class="eyebrow">Coming soon</span>
-        <div class="fgrid"></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="how wrap" id="how">
-    <span class="eyebrow">How it works</span>
-    <h2 class="h2">Turn your trip photos into a map in a few taps.</h2>
-    <div class="steps">
-      <div class="step">
-        <div class="ill">
-          <svg width="240" height="150" viewBox="0 0 240 150" aria-hidden="true">
-            <g transform="rotate(-8 70 80)"><rect x="30" y="35" width="80" height="80" rx="14" fill="#FFCDC0" stroke="#fff" stroke-width="4"></rect><path d="M44 100 L64 72 L78 88 L88 78 L100 100 Z" fill="#E54F36" opacity=".5"></path></g>
-            <g transform="rotate(6 170 80)"><rect x="130" y="35" width="80" height="80" rx="14" fill="#C3E5EE" stroke="#fff" stroke-width="4"></rect><path d="M144 100 L164 72 L178 88 L188 78 L200 100 Z" fill="#117588" opacity=".45"></path></g>
-            <rect x="80" y="25" width="80" height="80" rx="14" fill="#BAE19A" stroke="#fff" stroke-width="4"></rect>
-            <path d="M94 90 L114 62 L128 78 L138 68 L150 90 Z" fill="#2F9E5F" opacity=".5"></path>
-            <path d="M120 150 C120 150 104 132 104 121 A16 16 0 0 1 136 121 C136 132 120 150 120 150 Z" fill="#E54F36" stroke="#fff" stroke-width="3"></path>
-            <circle cx="120" cy="121" r="5" fill="#fff"></circle>
-          </svg>
+        <div class="feat flip tall">
+          <div class="flip-in">
+            <div class="face front">
+              <div class="shot"><div class="links">
+                <div class="share-card"><b>Trip to Japan</b><span><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"></path></svg>app.eonroam.io/t/Y95B77X4</span></div>
+                <div class="share-card share-plan"><b>San Francisco plan</b><span><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"></path></svg>app.eonroam.io/p/WTA5MQ7E</span></div>
+              </div></div>
+              <div class="fhead"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#BD3B26" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"></path></svg></div><h3>Share links</h3></div>
+            </div>
+            <div class="face back" aria-hidden="true">
+              <div><h3>Share links</h3><p>Send a link to a trip or a plan. Anyone can open it in a browser, no account needed.</p><p>A trip link plays the trip stop by stop.</p></div>
+            </div>
+          </div>
+          <button class="flip-btn" type="button" aria-expanded="false" aria-label="More about Share links"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 11a8 8 0 0 0-14.3-4.9L4 8M4 3v5h5M4 13a8 8 0 0 0 14.3 4.9L20 16M20 21v-5h-5"></path></svg></button>
         </div>
-        <span class="n">01</span>
-        <h3>Add your photos</h3>
-        <p>Pick photos from your trip. Each one appears on the map where you took it.</p>
-        <span class="note"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 11v6M12 7.5v.01"></path></svg>No location on a photo? Just pick the place yourself.</span>
-      </div>
-      <div class="step">
-        <div class="ill">
-          <svg width="260" height="150" viewBox="0 0 260 150" aria-hidden="true">
-            <path d="M18 34 Q 54 -4 90 40" stroke="#2B83C1" stroke-width="4" stroke-dasharray="2 9" stroke-linecap="round" fill="none"></path>
-            <path d="M90 40 C110 50 120 75 140 80" stroke="#E54F36" stroke-width="5" stroke-linecap="round" fill="none"></path>
-            <path d="M140 80 C165 86 185 82 205 95" stroke="#fff" stroke-width="7" stroke-linecap="round" fill="none"></path>
-            <path d="M140 80 C165 86 185 82 205 95" stroke="#6A4FD8" stroke-width="3" stroke-linecap="round" fill="none"></path>
-            <path d="M140 80 C165 86 185 82 205 95" stroke="#6A4FD8" stroke-width="8" stroke-dasharray="1.8 9" fill="none"></path>
-            <path d="M205 95 C220 105 228 118 240 128" stroke="#2F9E5F" stroke-width="4.5" stroke-linecap="round" fill="none"></path>
-            <circle cx="18" cy="34" r="7" fill="#fff" stroke="#2B83C1" stroke-width="3"></circle>
-            <circle cx="90" cy="40" r="7" fill="#fff" stroke="#2B83C1" stroke-width="3"></circle>
-            <circle cx="140" cy="80" r="7" fill="#E54F36" stroke="#fff" stroke-width="3"></circle>
-            <circle cx="205" cy="95" r="7" fill="#6A4FD8" stroke="#fff" stroke-width="3"></circle>
-            <circle cx="240" cy="128" r="7" fill="#E54F36" stroke="#fff" stroke-width="3"></circle>
-            <g font-family="Geist, sans-serif" font-size="13" font-weight="600">
-              <text x="30" y="66" fill="#1F6C9E">Flight</text>
-              <text x="74" y="84" fill="#BD3B26">Drive</text>
-              <text x="150" y="116" fill="#6A4FD8">Train</text>
-              <text x="198" y="146" fill="#23784A">Walk</text>
-            </g>
-          </svg>
-        </div>
-        <span class="n">02</span>
-        <h3>See your trip</h3>
-        <p>Your stops connect in the order you visited them, whether you drove, walked, took a train or flew.</p>
-      </div>
-      <div class="step">
-        <div class="ill">
-          <div class="opt"><span class="cap">In the app</span><div class="chips"><span class="chip on">Everyone</span><span class="chip">Followers</span><span class="chip">Friends</span></div></div>
-          <div class="opt"><span class="cap">Share link</span><div class="link">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#BD3B26" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"></path></svg>
-            app.eonroam.io/s/Y95B77X4
-          </div></div>
-        </div>
-        <span class="n">03</span>
-        <h3>Share it</h3>
-        <p>In the app, you choose who sees each trip: everyone, your followers, or only friends. A share link is different: anyone with the link can open it.</p>
       </div>
     </div>
   </section>
@@ -236,8 +311,8 @@
       <h2 class="h2">Questions</h2>
       <div class="qs">
         <details open>
-          <summary>Do I need an account to see a trip?<svg class="pm" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00313E" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M12 5v14"></path></svg></summary>
-          <p>No. A shared link opens in any browser. You need an account to post trips, like, comment, save or follow.</p>
+          <summary>Do I need an account to see a trip or a plan?<svg class="pm" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00313E" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M12 5v14"></path></svg></summary>
+          <p>No. A trip link or a plan link opens in any browser. You need an account to post trips, make plans, like, comment, save or follow.</p>
         </details>
         <details>
           <summary>What if a photo has no location?<svg class="pm" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00313E" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M12 5v14"></path></svg></summary>
@@ -249,7 +324,11 @@
         </details>
         <details>
           <summary>Is Eonroamio free?<svg class="pm" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00313E" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M12 5v14"></path></svg></summary>
-          <p>Yes. Eonroamio is always free to use, on iPhone and on the web.</p>
+          <p>Yes. Eonroamio is always free to use, on iPhone and on the web. That includes planning with AI.</p>
+        </details>
+        <details>
+          <summary>How does AI planning use my note?<svg class="pm" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00313E" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M12 5v14"></path></svg></summary>
+          <p>We use AI to find the places in your note, work out how to get from one place to the next, and estimate how much time to spend at each one.</p>
         </details>
         <details>
           <summary>How do I delete my account?<svg class="pm" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00313E" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M12 5v14"></path></svg></summary>
@@ -291,7 +370,7 @@
         <a class="ftag" href="https://app.eonroam.io">Map Your Memories</a>
       </div>
       <div class="fcols">
-        <div class="fcol"><h4>Product</h4><a href="https://app.eonroam.io">Open the app</a><span class="soon">iPhone app (soon)</span><a href="#features">Features</a><a href="#how">How it works</a></div>
+        <div class="fcol"><h4>Product</h4><a href="https://app.eonroam.io">Open the app</a><span class="soon">iPhone app (soon)</span><a href="#share">Share</a><a href="#plan">Plan</a></div>
         <div class="fcol"><h4>Help</h4><a href="#faq">FAQ</a><a href="mailto:support@eonroam.io">Contact</a></div>
         <div class="fcol"><h4>Legal</h4><a href="https://app.eonroam.io/tos">Terms of Service</a><a href="https://app.eonroam.io/privacy">Privacy Policy</a><a href="https://app.eonroam.io/copyright">Copyright &amp; DMCA</a></div>
       </div>
@@ -311,8 +390,8 @@
     </button>
   </div>
   <nav class="menu-main" aria-label="Menu">
-    <a href="#features">Features</a>
-    <a href="#how">How it works</a>
+    <a href="#share">Share</a>
+    <a href="#plan">Plan</a>
     <a href="#faq">FAQ</a>
     <a href="#help">Contact</a>
   </nav>
