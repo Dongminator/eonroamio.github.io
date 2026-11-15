@@ -4,7 +4,9 @@
             {
                 "appIDs": ["85N86WNGB2.io.eonroam.app"],
                 "components": [
-                    { "/": "/s/*", "comment": "a shared route" }
+                    { "/": "/t/*", "comment": "a shared trip" },
+                    { "/": "/p/*", "comment": "a shared plan" },
+                    { "/": "/s/*", "comment": "a shared trip, old form" }
                 ]
             }
         ]

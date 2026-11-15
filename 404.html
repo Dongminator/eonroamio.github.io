@@ -7,13 +7,14 @@
   <meta name="robots" content="noindex">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <script>
-    /*  The iOS app builds share links on eonroam.io, and links already sent
-        and the iOS legal links use eonroam.io paths too. Those pages belong to
-        the web app at app.eonroam.io. GitHub Pages has no server-side
-        redirects, so this page forwards them with their query and hash. */
+    /*  Share links (/t/, /p/, /s/) and the iOS legal links use eonroam.io
+        paths, and those pages belong to the web app at app.eonroam.io.
+        Cloudflare redirects the share links before they reach GitHub Pages;
+        this page forwards anything that still arrives, with its query and
+        hash, because GitHub Pages has no server-side redirects. */
     (function () {
       var path = location.pathname;
-      var appPaths = /^\/(s\/[^/]+\/?|privacy(\.html)?|tos(\.html)?|copyright(\.html)?|copyright\/notice|dmca|admin\/dmca)\/?$/;
+      var appPaths = /^\/([stp]\/[^/]+\/?|privacy(\.html)?|tos(\.html)?|copyright(\.html)?|copyright\/notice|dmca|admin\/dmca)\/?$/;
       if (appPaths.test(path)) {
         location.replace('https://app.eonroam.io' + path + location.search + location.hash);
       }
