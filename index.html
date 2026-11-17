@@ -3,18 +3,27 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>Eonroamio · Map memories. Plan trips.</title>
-  <meta name="description" content="Share your trips as a map and see where others went. Plan your next trip with AI.">
+  <title>Eonroamio: Travel Photo Map &amp; AI Trip Planner</title>
+  <meta name="description" content="Pin your trip photos and videos on a map and turn them into a route you can share. See where other travellers went, then let AI plan your next trip day by day. Free on iPhone and the web.">
   <meta name="theme-color" content="#00252E">
   <meta name="format-detection" content="telephone=no">
   <meta name="apple-itunes-app" content="app-id=6816869387">
   <link rel="canonical" href="https://eonroam.io/">
   <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Eonroamio">
+  <meta property="og:locale" content="en_US">
   <meta property="og:url" content="https://eonroam.io/">
-  <meta property="og:title" content="Eonroamio · Map memories. Plan trips.">
-  <meta property="og:description" content="Share your trips as a map and see where others went. Plan your next trip with AI.">
-  <meta property="og:image" content="https://eonroam.io/images/logo512.png">
-  <meta name="twitter:card" content="summary">
+  <meta property="og:title" content="Eonroamio: Travel Photo Map &amp; AI Trip Planner">
+  <meta property="og:description" content="Pin your trip photos on a map, share the route, and let AI plan your next trip day by day. Free on iPhone and the web.">
+  <meta property="og:image" content="https://eonroam.io/images/social-card.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Eonroamio on iPhone: trip photos on a map of Hawaii and a planned day in San Francisco">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Eonroamio: Travel Photo Map &amp; AI Trip Planner">
+  <meta name="twitter:description" content="Pin your trip photos on a map, share the route, and let AI plan your next trip day by day. Free on iPhone and the web.">
+  <meta name="twitter:image" content="https://eonroam.io/images/social-card.png">
+  <link rel="preload" as="image" href="/images/Home.webp" type="image/webp" fetchpriority="high">
   <link rel="icon" href="/favicon.ico" sizes="48x48 32x32 16x16">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -23,6 +32,63 @@
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Geist:wght@400;500;600;700;800&family=Geist+Mono:wght@600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
   <script src="/site.js" defer></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://eonroam.io/#org",
+        "name": "Eonroamio",
+        "legalName": "Eonroamio LLC",
+        "url": "https://eonroam.io/",
+        "logo": "https://eonroam.io/images/logo512.png",
+        "email": "support@eonroam.io",
+        "sameAs": ["https://apps.apple.com/app/id6816869387"]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://eonroam.io/#website",
+        "name": "Eonroamio",
+        "url": "https://eonroam.io/",
+        "publisher": { "@id": "https://eonroam.io/#org" }
+      },
+      {
+        "@type": "MobileApplication",
+        "name": "Eonroamio",
+        "operatingSystem": "iOS",
+        "applicationCategory": "TravelApplication",
+        "description": "Pin your trip photos and videos on a map and turn them into a route you can share. See where other travellers went, then let AI plan your next trip day by day.",
+        "url": "https://eonroam.io/",
+        "installUrl": "https://apps.apple.com/app/id6816869387",
+        "image": "https://eonroam.io/images/social-card.png",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "publisher": { "@id": "https://eonroam.io/#org" }
+      },
+      {
+        "@type": "WebApplication",
+        "name": "Eonroamio",
+        "url": "https://app.eonroam.io/",
+        "browserRequirements": "Requires JavaScript",
+        "applicationCategory": "TravelApplication",
+        "operatingSystem": "Any",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "publisher": { "@id": "https://eonroam.io/#org" }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          { "@type": "Question", "name": "Do I need an account to see a trip or a plan?", "acceptedAnswer": { "@type": "Answer", "text": "No. A trip link or a plan link opens in any browser. You need an account to post trips, make plans, like, comment, save or follow." } },
+          { "@type": "Question", "name": "What if a photo has no location?", "acceptedAnswer": { "@type": "Answer", "text": "Eonroamio asks you to tag the place and time for that photo." } },
+          { "@type": "Question", "name": "Who can see my trips?", "acceptedAnswer": { "@type": "Answer", "text": "You choose for each route: everyone, your followers, or friends only. Please note: a shared link is visible to everyone." } },
+          { "@type": "Question", "name": "Is Eonroamio free?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Eonroamio is always free to use, on iPhone and on the web. That includes planning with AI." } },
+          { "@type": "Question", "name": "How does AI planning use my note?", "acceptedAnswer": { "@type": "Answer", "text": "We use AI to find the places in your note, work out how to get from one place to the next, and estimate how much time to spend at each one." } },
+          { "@type": "Question", "name": "How do I delete my account?", "acceptedAnswer": { "@type": "Answer", "text": "Tap your avatar, then Settings → Help & Support → Delete account. Or email support@eonroam.io from the email address you registered with." } }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -74,13 +140,13 @@
       <div class="stage">
         <div class="phone phone-share">
           <div class="screen">
-            <img src="/images/Home.png" alt="Eonroamio home screen with trips on a map" />
+            <img src="/images/Home.webp" width="1000" height="2172" alt="Eonroamio home screen with trip photos on a map of Hawaii" fetchpriority="high" decoding="async">
           </div>
           <span class="phone-tag">Share</span>
         </div>
         <div class="phone phone-plan">
           <div class="screen">
-            <img src="/images/plan-hero.webp" alt="A planned day in San Francisco with stops, times and travel between them" />
+            <img src="/images/plan-hero.webp" width="1000" height="2174" alt="A planned day in San Francisco with stops, times and travel between them" decoding="async">
           </div>
           <span class="phone-tag">Plan</span>
         </div>
@@ -123,7 +189,7 @@
           </div>
           <span class="n">01</span>
           <h3>Share your travel experiences</h3>
-          <p>Pick photos an videos from your trip. Each one appears on the map where you took it.</p>
+          <p>Pick photos and videos from your trip. Each one appears on the map where you took it.</p>
           <span class="note"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 11v6M12 7.5v.01"></path></svg>No location on a photo? Just pick the place yourself.</span>
         </div>
         <div class="step">

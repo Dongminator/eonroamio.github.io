@@ -11,6 +11,8 @@ by GitHub Pages. The web app itself lives at **app.eonroam.io** (eonroam.io-web)
 | `privacy/`, `tos/`, `copyright/`, `copyright/notice/`, `dmca/` | Redirects to the same page on app.eonroam.io |
 | `.well-known/apple-app-site-association` | iOS universal links for `/s/*`, copied from eonroam.io-web |
 | `CNAME` | The custom domain GitHub Pages serves |
+| `robots.txt`, `sitemap.xml` | Crawl rules and the page list for search engines. Cloudflare adds its own AI-crawler rules above ours. Update `lastmod` in `sitemap.xml` when the home page changes |
+| `images/social-card.png` | 1200×630 link preview (`og:image`, `twitter:image`) |
 | `.nojekyll` | Stops Jekyll from dropping `.well-known` |
 
 ## Run it locally
